@@ -32,7 +32,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Home" id="hM1-RK-0Zu"/>
+                                    <navigationItem title="MBFS Inspections" id="hM1-RK-0Zu"/>
                                 </items>
                             </navigationBar>
                         </subviews>
