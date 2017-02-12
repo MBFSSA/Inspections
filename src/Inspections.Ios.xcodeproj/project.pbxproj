@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0026EE771E50D2D700E32334 /* Inspections.lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 0026EE751E50D2D700E32334 /* Inspections.lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0026EE7A1E50D2D700E32334 /* Inspections.lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0026EE731E50D2D700E32334 /* Inspections.lib.framework */; };
+		0026EE7B1E50D2D700E32334 /* Inspections.lib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0026EE731E50D2D700E32334 /* Inspections.lib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00669EE51E4D7C5500DF8BE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00669EE41E4D7C5500DF8BE0 /* AppDelegate.swift */; };
 		00669EE71E4D7C5500DF8BE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00669EE61E4D7C5500DF8BE0 /* HomeViewController.swift */; };
 		00669EE91E4D7C5500DF8BE0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00669EE81E4D7C5500DF8BE0 /* SecondViewController.swift */; };
@@ -18,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0026EE781E50D2D700E32334 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00669ED91E4D7C5500DF8BE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0026EE721E50D2D700E32334;
+			remoteInfo = Inspections.lib;
+		};
 		00669EF81E4D7C5600DF8BE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 00669ED91E4D7C5500DF8BE0 /* Project object */;
@@ -34,7 +44,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0026EE7F1E50D2D700E32334 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0026EE7B1E50D2D700E32334 /* Inspections.lib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0026EE731E50D2D700E32334 /* Inspections.lib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Inspections.lib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0026EE751E50D2D700E32334 /* Inspections.lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Inspections.lib.h; sourceTree = "<group>"; };
+		0026EE761E50D2D700E32334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00669EE11E4D7C5500DF8BE0 /* Inspections.Ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inspections.Ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00669EE41E4D7C5500DF8BE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00669EE61E4D7C5500DF8BE0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -52,10 +79,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0026EE6F1E50D2D700E32334 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00669EDE1E4D7C5500DF8BE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0026EE7A1E50D2D700E32334 /* Inspections.lib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +111,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0026EE741E50D2D700E32334 /* Inspections.lib */ = {
+			isa = PBXGroup;
+			children = (
+				0026EE751E50D2D700E32334 /* Inspections.lib.h */,
+				0026EE761E50D2D700E32334 /* Info.plist */,
+			);
+			path = Inspections.lib;
+			sourceTree = "<group>";
+		};
 		00669ED81E4D7C5500DF8BE0 = {
 			isa = PBXGroup;
 			children = (
 				00669EE31E4D7C5500DF8BE0 /* Inspections.Ios */,
 				00669EFA1E4D7C5600DF8BE0 /* Inspections.IosTests */,
 				00669F051E4D7C5600DF8BE0 /* Inspections.IosUITests */,
+				0026EE741E50D2D700E32334 /* Inspections.lib */,
 				00669EE21E4D7C5500DF8BE0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +137,7 @@
 				00669EE11E4D7C5500DF8BE0 /* Inspections.Ios.app */,
 				00669EF71E4D7C5600DF8BE0 /* Inspections.IosTests.xctest */,
 				00669F021E4D7C5600DF8BE0 /* Inspections.IosUITests.xctest */,
+				0026EE731E50D2D700E32334 /* Inspections.lib.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,7 +176,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		0026EE701E50D2D700E32334 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0026EE771E50D2D700E32334 /* Inspections.lib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		0026EE721E50D2D700E32334 /* Inspections.lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0026EE7C1E50D2D700E32334 /* Build configuration list for PBXNativeTarget "Inspections.lib" */;
+			buildPhases = (
+				0026EE6E1E50D2D700E32334 /* Sources */,
+				0026EE6F1E50D2D700E32334 /* Frameworks */,
+				0026EE701E50D2D700E32334 /* Headers */,
+				0026EE711E50D2D700E32334 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Inspections.lib;
+			productName = Inspections.lib;
+			productReference = 0026EE731E50D2D700E32334 /* Inspections.lib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		00669EE01E4D7C5500DF8BE0 /* Inspections.Ios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00669F0B1E4D7C5600DF8BE0 /* Build configuration list for PBXNativeTarget "Inspections.Ios" */;
@@ -138,10 +213,12 @@
 				00669EDD1E4D7C5500DF8BE0 /* Sources */,
 				00669EDE1E4D7C5500DF8BE0 /* Frameworks */,
 				00669EDF1E4D7C5500DF8BE0 /* Resources */,
+				0026EE7F1E50D2D700E32334 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0026EE791E50D2D700E32334 /* PBXTargetDependency */,
 			);
 			name = Inspections.Ios;
 			productName = Inspections.Ios;
@@ -194,6 +271,11 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Ryan Johansen";
 				TargetAttributes = {
+					0026EE721E50D2D700E32334 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8T6B5Y5S72;
+						ProvisioningStyle = Automatic;
+					};
 					00669EE01E4D7C5500DF8BE0 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8T6B5Y5S72;
@@ -229,11 +311,19 @@
 				00669EE01E4D7C5500DF8BE0 /* Inspections.Ios */,
 				00669EF61E4D7C5600DF8BE0 /* Inspections.IosTests */,
 				00669F011E4D7C5600DF8BE0 /* Inspections.IosUITests */,
+				0026EE721E50D2D700E32334 /* Inspections.lib */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0026EE711E50D2D700E32334 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00669EDF1E4D7C5500DF8BE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,6 +351,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0026EE6E1E50D2D700E32334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00669EDD1E4D7C5500DF8BE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +387,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0026EE791E50D2D700E32334 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0026EE721E50D2D700E32334 /* Inspections.lib */;
+			targetProxy = 0026EE781E50D2D700E32334 /* PBXContainerItemProxy */;
+		};
 		00669EF91E4D7C5600DF8BE0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 00669EE01E4D7C5500DF8BE0 /* Inspections.Ios */;
@@ -322,6 +424,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0026EE7D1E50D2D700E32334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8T6B5Y5S72;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Inspections.lib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "daimler.com.Inspections-lib";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0026EE7E1E50D2D700E32334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8T6B5Y5S72;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Inspections.lib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "daimler.com.Inspections-lib";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		00669F091E4D7C5600DF8BE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -502,6 +648,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0026EE7C1E50D2D700E32334 /* Build configuration list for PBXNativeTarget "Inspections.lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0026EE7D1E50D2D700E32334 /* Debug */,
+				0026EE7E1E50D2D700E32334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		00669EDC1E4D7C5500DF8BE0 /* Build configuration list for PBXProject "Inspections.Ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
