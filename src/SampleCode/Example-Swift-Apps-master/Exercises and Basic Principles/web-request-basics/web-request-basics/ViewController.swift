@@ -34,11 +34,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         // Define based on Parent Coordinates
-        let frame = CGRectMake( 0, 0, container.bounds.width, container.bounds.height)
+        let frame = CGRect( x: 0, y: 0, width: container.bounds.width, height: container.bounds.height)
         
         // Change Frame After Defined
         webView.frame = frame
@@ -47,25 +47,25 @@ class ViewController: UIViewController {
         
     }
     
-    func loadRequest(urlStr: String) {
+    func loadRequest(_ urlStr: String) {
         
-        let url = NSURL(string: urlStr)!
+        let url = URL(string: urlStr)!
         
-        let request = NSURLRequest(URL: url)
+        let request = URLRequest(url: url)
         
-        webView.loadRequest(request)
+        webView.load(request)
     }
     
-    @IBAction func buttonOnePressed(sender: AnyObject) {
+    @IBAction func buttonOnePressed(_ sender: AnyObject) {
         
         loadRequest("https://www.dryverless.com")
     }
 
-    @IBAction func buttonTwoPressed(sender: AnyObject) {
+    @IBAction func buttonTwoPressed(_ sender: AnyObject) {
         
         loadRequest("https://developer.apple.com/swift/blog")
     }
-    @IBAction func buttonThreePressed(sender: AnyObject) {
+    @IBAction func buttonThreePressed(_ sender: AnyObject) {
         
         loadRequest("https://www.GitHub.com/TheDarkCode/Example-Swift-Apps")
     }

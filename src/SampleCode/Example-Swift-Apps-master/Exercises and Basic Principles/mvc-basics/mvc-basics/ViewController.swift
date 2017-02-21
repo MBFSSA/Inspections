@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func changeNameBtnPressed(sender: AnyObject) {
+    @IBAction func changeNameBtnPressed(_ sender: AnyObject) {
         
         if let newName = changeNameField.text {
             person.firstName = newName

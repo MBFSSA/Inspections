@@ -10,8 +10,8 @@ import Foundation
 
 class Person {
     
-    private var _firstName: String!
-    private var _lastName: String!
+    fileprivate var _firstName: String!
+    fileprivate var _lastName: String!
     
     var firstName: String {
         get {

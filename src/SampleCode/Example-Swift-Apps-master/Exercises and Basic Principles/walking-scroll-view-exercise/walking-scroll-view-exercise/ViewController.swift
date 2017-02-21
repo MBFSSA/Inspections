@@ -18,8 +18,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for var x = 1; x <= 5; x++ {
-            
+        
+        
+        for x in stride(from: 0, to: 5, by: 1){
             let img = UIImage(named: "\(x)")
             let imgView = UIImageView(image: img)
             
@@ -27,10 +28,11 @@ class ViewController: UIViewController {
             
             let imgY: CGFloat = 310 // scrollView.frame.size.height - (HEIGHT + 60)
             
-            imgView.frame = CGRectMake(-WIDTH + (WIDTH * CGFloat(x)), imgY, WIDTH, HEIGHT)
+            imgView.frame = CGRect(x: -WIDTH + (WIDTH * CGFloat(x)), y: imgY, width: WIDTH, height: HEIGHT)
         }
+      
         
-        scrollView.contentSize = CGSizeMake(WIDTH * 5, scrollView.frame.size.height)
+        scrollView.contentSize = CGSize(width: WIDTH * 5, height: scrollView.frame.size.height)
         
     }
 
