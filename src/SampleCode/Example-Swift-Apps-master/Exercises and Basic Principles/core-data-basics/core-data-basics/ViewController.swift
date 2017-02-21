@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
         super.viewDidAppear(animated)
         fetchAndSetResults()
@@ -35,15 +35,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func fetchAndSetResults() {
         
-        let app = UIApplication.sharedApplication().delegate as! AppDelegate
+        let app = UIApplication.shared.delegate as! AppDelegate
         
         let context = app.managedObjectContext
         
-        let fetchRequest = NSFetchRequest(entityName: "Recipe")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Recipe")
         
         do {
             
-            let results = try context.executeFetchRequest(fetchRequest)
+            let results = try context.fetch(fetchRequest)
             self.recipes = results as! [Recipe]
             
         } catch let err as NSError {
@@ -54,17 +54,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
 
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipes.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let cell = tableView.dequeueReusableCellWithIdentifier("recipeCell") as? RecipeCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell") as? RecipeCell {
             
             if let recipe = recipes[indexPath.row] as Recipe! {
                 

@@ -19,12 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Background
     var imageView: UIImageView?
     
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // Override point for customization after application launch.
         
         // Set Window Frame
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
         
         // Set Window View Controller (Default View)
         self.window?.rootViewController = UIViewController()
@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         imageView.image = UIImage(named: "screen")
         
         // Set Content Mode to Aspect Fill
-        imageView.contentMode = UIViewContentMode.ScaleAspectFill
+        imageView.contentMode = UIViewContentMode.scaleAspectFill
         
         // Add Image to View
         self.window!.addSubview(imageView)
@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.mask = CALayer()
         
         // Define Mask Image
-        self.mask!.contents = UIImage(named: "mask")!.CGImage
+        self.mask!.contents = UIImage(named: "mask")!.cgImage
         
         // Keep Aspect Ratio of Mask Source Image
         self.mask!.contentsGravity = kCAGravityResizeAspect
@@ -73,30 +73,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.makeKeyAndVisible()
         
         // Hide Status Bar
-        UIApplication.sharedApplication().statusBarHidden = true
+        UIApplication.shared.isStatusBarHidden = true
         
         return true
     }
     
-    func applicationWillResignActive(application: UIApplication) {
+    func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
     }
     
-    func applicationDidEnterBackground(application: UIApplication) {
+    func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
     
-    func applicationWillEnterForeground(application: UIApplication) {
+    func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     }
     
-    func applicationDidBecomeActive(application: UIApplication) {
+    func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
     
-    func applicationWillTerminate(application: UIApplication) {
+    func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
@@ -118,13 +118,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         keyFrameAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut), CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)]
         
         // Set Initial Bounds to Mask Bounds
-        let initialBounds = NSValue(CGRect: mask!.bounds)
+        let initialBounds = NSValue(cgRect: mask!.bounds)
         
         // Set Shrink Bounds
-        let secondBounds = NSValue(CGRect: CGRect(x: 0, y: 0, width: 60, height: 60))
+        let secondBounds = NSValue(cgRect: CGRect(x: 0, y: 0, width: 60, height: 60))
         
         // Set Expansion Bounds
-        let finalBounds = NSValue(CGRect: CGRect(x: 0, y: 0, width: 1600, height: 1600))
+        let finalBounds = NSValue(cgRect: CGRect(x: 0, y: 0, width: 1600, height: 1600))
         
         // Add Bounds to keyFrameAnimation
         keyFrameAnimation.values = [initialBounds, secondBounds, finalBounds]
@@ -133,11 +133,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         keyFrameAnimation.keyTimes = [ 0, 0.3, 1 ]
         
         // Add Animation to Mask
-        self.mask!.addAnimation(keyFrameAnimation, forKey: "bounds")
+        self.mask!.add(keyFrameAnimation, forKey: "bounds")
         
     }
     
-    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+    override func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         
         // Remove mask
         self.imageView!.layer.mask = nil

@@ -14,7 +14,7 @@ class Recipe: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
 
-    func setRecipeImage(image: UIImage!) {
+    func setRecipeImage(_ image: UIImage!) {
         
         let data = UIImagePNGRepresentation(image)
         
@@ -24,7 +24,7 @@ class Recipe: NSManagedObject {
     
     func getRecipeImage() -> UIImage {
         
-        if let image: UIImage = UIImage(data: self.image!) {
+        if let image: UIImage = UIImage(data: self.image! as Data) {
             
             return image
         

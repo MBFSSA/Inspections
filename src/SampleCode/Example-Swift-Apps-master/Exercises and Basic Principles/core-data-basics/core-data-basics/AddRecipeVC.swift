@@ -31,37 +31,37 @@ class AddRecipeVC: UIViewController, UIImagePickerControllerDelegate, UINavigati
         
     }
     
-    func roundCornersOfView(view: UIView!) {
+    func roundCornersOfView(_ view: UIView!) {
         
         view.layer.cornerRadius = 15.0
         view.clipsToBounds = true
         
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         
-        imagePicker.dismissViewControllerAnimated(true, completion: nil)
+        imagePicker.dismiss(animated: true, completion: nil)
         recipeImage.image = image
         
     }
     
-    @IBAction func addRecipeImage(sender: AnyObject!) {
+    @IBAction func addRecipeImage(_ sender: AnyObject!) {
         
-        presentViewController(imagePicker, animated: true, completion: nil)
+        present(imagePicker, animated: true, completion: nil)
         
     }
     
-    @IBAction func createRecipe(sender: AnyObject!) {
+    @IBAction func createRecipe(_ sender: AnyObject!) {
         
-        if let title: String = recipeTitle.text where title != "" {
+        if let title: String = recipeTitle.text, title != "" {
             
-            let app = UIApplication.sharedApplication().delegate as! AppDelegate
+            let app = UIApplication.shared.delegate as! AppDelegate
             
             let context = app.managedObjectContext
             
-            let entity = NSEntityDescription.entityForName("Recipe", inManagedObjectContext: context)!
+            let entity = NSEntityDescription.entity(forEntityName: "Recipe", in: context)!
             
-            let recipe = Recipe(entity: entity, insertIntoManagedObjectContext: context)
+            let recipe = Recipe(entity: entity, insertInto: context)
             
             recipe.title = title
             
@@ -83,7 +83,7 @@ class AddRecipeVC: UIViewController, UIImagePickerControllerDelegate, UINavigati
                 
             }
             
-            context.insertObject(recipe)
+            context.insert(recipe)
             
             do {
                 
@@ -95,7 +95,7 @@ class AddRecipeVC: UIViewController, UIImagePickerControllerDelegate, UINavigati
                 NSLog("Failed to save recipe to Core Data.")
             }
             
-            self.navigationController?.popViewControllerAnimated(true)
+            self.navigationController?.popViewController(animated: true)
             
         }
         
