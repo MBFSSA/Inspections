@@ -81,6 +81,8 @@
 		003B957D1E5DB48800688BFF /* MbInspections */ = {
 			isa = PBXGroup;
 			children = (
+				003C5FD31E5DB88A001B5B1F /* Infra */,
+				003C5FD21E5DB87F001B5B1F /* AppLayer */,
 				003B957E1E5DB48800688BFF /* AppDelegate.swift */,
 				003B95801E5DB48800688BFF /* FirstViewController.swift */,
 				003B95821E5DB48800688BFF /* SecondViewController.swift */,
@@ -90,6 +92,20 @@
 				003B958C1E5DB48800688BFF /* Info.plist */,
 			);
 			path = MbInspections;
+			sourceTree = "<group>";
+		};
+		003C5FD21E5DB87F001B5B1F /* AppLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AppLayer;
+			sourceTree = "<group>";
+		};
+		003C5FD31E5DB88A001B5B1F /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Infra;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +348,7 @@
 				003B95911E5DB48800688BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

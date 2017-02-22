@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		003B95B61E5DB4CC00688BFF /* InspectionsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 003B95B41E5DB4CC00688BFF /* InspectionsData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003C5FCC1E5DB682001B5B1F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C5FCB1E5DB682001B5B1F /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		003B95B11E5DB4CC00688BFF /* InspectionsData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InspectionsData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		003B95B41E5DB4CC00688BFF /* InspectionsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InspectionsData.h; sourceTree = "<group>"; };
 		003B95B51E5DB4CC00688BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		003C5FCB1E5DB682001B5B1F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +23,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003C5FCC1E5DB682001B5B1F /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +35,7 @@
 			children = (
 				003B95B31E5DB4CC00688BFF /* InspectionsData */,
 				003B95B21E5DB4CC00688BFF /* Products */,
+				003C5FCA1E5DB682001B5B1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +50,34 @@
 		003B95B31E5DB4CC00688BFF /* InspectionsData */ = {
 			isa = PBXGroup;
 			children = (
+				003C5FCE1E5DB856001B5B1F /* Infra */,
+				003C5FCD1E5DB84B001B5B1F /* Domain */,
 				003B95B41E5DB4CC00688BFF /* InspectionsData.h */,
 				003B95B51E5DB4CC00688BFF /* Info.plist */,
 			);
 			path = InspectionsData;
+			sourceTree = "<group>";
+		};
+		003C5FCA1E5DB682001B5B1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				003C5FCB1E5DB682001B5B1F /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		003C5FCD1E5DB84B001B5B1F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		003C5FCE1E5DB856001B5B1F /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Infra;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +322,7 @@
 				003B95BB1E5DB4CC00688BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

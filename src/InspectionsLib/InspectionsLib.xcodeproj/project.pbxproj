@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		003B95A11E5DB4B000688BFF /* InspectionsLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 003B959F1E5DB4B000688BFF /* InspectionsLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003C5FD61E5DB8D7001B5B1F /* InspectionsData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C5FD51E5DB8D7001B5B1F /* InspectionsData.framework */; };
+		003C5FD81E5DB8E7001B5B1F /* InspectionSheetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C5FD71E5DB8E7001B5B1F /* InspectionSheetService.swift */; };
+		003C5FDA1E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C5FD91E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		003B959C1E5DB4B000688BFF /* InspectionsLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InspectionsLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		003B959F1E5DB4B000688BFF /* InspectionsLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InspectionsLib.h; sourceTree = "<group>"; };
 		003B95A01E5DB4B000688BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		003C5FD51E5DB8D7001B5B1F /* InspectionsData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InspectionsData.framework; path = "../../../../Library/Developer/Xcode/DerivedData/InspectionsWorkspace-gvsiasmrtuyexrfvhfeyeyqpwrty/Build/Products/Debug-iphonesimulator/InspectionsData.framework"; sourceTree = "<group>"; };
+		003C5FD71E5DB8E7001B5B1F /* InspectionSheetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectionSheetService.swift; sourceTree = "<group>"; };
+		003C5FD91E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancedAssetInspectionSheetService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003C5FD61E5DB8D7001B5B1F /* InspectionsData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +39,7 @@
 			children = (
 				003B959E1E5DB4B000688BFF /* InspectionsLib */,
 				003B959D1E5DB4B000688BFF /* Products */,
+				003C5FD41E5DB8D7001B5B1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +54,36 @@
 		003B959E1E5DB4B000688BFF /* InspectionsLib */ = {
 			isa = PBXGroup;
 			children = (
+				003C5FD11E5DB872001B5B1F /* Infra */,
+				003C5FD01E5DB869001B5B1F /* AppLayer */,
 				003B959F1E5DB4B000688BFF /* InspectionsLib.h */,
 				003B95A01E5DB4B000688BFF /* Info.plist */,
 			);
 			path = InspectionsLib;
+			sourceTree = "<group>";
+		};
+		003C5FD01E5DB869001B5B1F /* AppLayer */ = {
+			isa = PBXGroup;
+			children = (
+				003C5FD71E5DB8E7001B5B1F /* InspectionSheetService.swift */,
+				003C5FD91E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift */,
+			);
+			name = AppLayer;
+			sourceTree = "<group>";
+		};
+		003C5FD11E5DB872001B5B1F /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Infra;
+			sourceTree = "<group>";
+		};
+		003C5FD41E5DB8D7001B5B1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				003C5FD51E5DB8D7001B5B1F /* InspectionsData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +130,7 @@
 					003B959B1E5DB4AF00688BFF = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8T6B5Y5S72;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003C5FDA1E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift in Sources */,
+				003C5FD81E5DB8E7001B5B1F /* InspectionSheetService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +277,7 @@
 		003B95A51E5DB4B000688BFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8T6B5Y5S72;
@@ -252,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = daimler.com.InspectionsLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +298,7 @@
 		003B95A61E5DB4B000688BFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8T6B5Y5S72;
@@ -294,6 +334,7 @@
 				003B95A61E5DB4B000688BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
