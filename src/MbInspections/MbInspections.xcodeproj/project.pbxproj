@@ -18,6 +18,7 @@
 		003B95C21E5DB53800688BFF /* InspectionsData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 003B95C01E5DB53800688BFF /* InspectionsData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		003C5FDC1E5DBC2D001B5B1F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C5FDB1E5DBC2D001B5B1F /* LoginViewController.swift */; };
 		003C5FE31E5DC150001B5B1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003C5FE11E5DC150001B5B1F /* Main.storyboard */; };
+		007F03F11E5E178500B831E2 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007F03F01E5E178500B831E2 /* ForgotPasswordViewController.swift */; };
 		00B5B2CA1E5DDC4F00249D60 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5B2C91E5DDC4F00249D60 /* HomeTabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		003B95C01E5DB53800688BFF /* InspectionsData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InspectionsData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		003C5FDB1E5DBC2D001B5B1F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		003C5FE21E5DC150001B5B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MbInspections/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		007F03F01E5E178500B831E2 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		00B5B2C91E5DDC4F00249D60 /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 				003B95821E5DB48800688BFF /* SecondViewController.swift */,
 				003B95801E5DB48800688BFF /* FirstViewController.swift */,
 				00B5B2C91E5DDC4F00249D60 /* HomeTabBarController.swift */,
+				007F03F01E5E178500B831E2 /* ForgotPasswordViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			files = (
 				003C5FDC1E5DBC2D001B5B1F /* LoginViewController.swift in Sources */,
 				003B95831E5DB48800688BFF /* SecondViewController.swift in Sources */,
+				007F03F11E5E178500B831E2 /* ForgotPasswordViewController.swift in Sources */,
 				003B957F1E5DB48800688BFF /* AppDelegate.swift in Sources */,
 				003B95811E5DB48800688BFF /* FirstViewController.swift in Sources */,
 				00B5B2CA1E5DDC4F00249D60 /* HomeTabBarController.swift in Sources */,
