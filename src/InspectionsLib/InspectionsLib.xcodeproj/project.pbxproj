@@ -11,6 +11,7 @@
 		003C5FD61E5DB8D7001B5B1F /* InspectionsData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C5FD51E5DB8D7001B5B1F /* InspectionsData.framework */; };
 		003C5FD81E5DB8E7001B5B1F /* InspectionSheetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C5FD71E5DB8E7001B5B1F /* InspectionSheetService.swift */; };
 		003C5FDA1E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C5FD91E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift */; };
+		00B5B2CC1E5DDFCC00249D60 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5B2CB1E5DDFCC00249D60 /* AuthenticationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		003C5FD51E5DB8D7001B5B1F /* InspectionsData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InspectionsData.framework; path = "../../../../Library/Developer/Xcode/DerivedData/InspectionsWorkspace-gvsiasmrtuyexrfvhfeyeyqpwrty/Build/Products/Debug-iphonesimulator/InspectionsData.framework"; sourceTree = "<group>"; };
 		003C5FD71E5DB8E7001B5B1F /* InspectionSheetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectionSheetService.swift; sourceTree = "<group>"; };
 		003C5FD91E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancedAssetInspectionSheetService.swift; sourceTree = "<group>"; };
+		00B5B2CB1E5DDFCC00249D60 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			children = (
 				003C5FD71E5DB8E7001B5B1F /* InspectionSheetService.swift */,
 				003C5FD91E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift */,
+				00B5B2CB1E5DDFCC00249D60 /* AuthenticationService.swift */,
 			);
 			name = AppLayer;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B5B2CC1E5DDFCC00249D60 /* AuthenticationService.swift in Sources */,
 				003C5FDA1E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift in Sources */,
 				003C5FD81E5DB8E7001B5B1F /* InspectionSheetService.swift in Sources */,
 			);

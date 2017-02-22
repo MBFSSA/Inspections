@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		003B95B61E5DB4CC00688BFF /* InspectionsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 003B95B41E5DB4CC00688BFF /* InspectionsData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		003C5FCC1E5DB682001B5B1F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C5FCB1E5DB682001B5B1F /* CoreData.framework */; };
+		00B5B2CE1E5DE03000249D60 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5B2CD1E5DE03000249D60 /* User.swift */; };
+		00B5B2D01E5DE19500249D60 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5B2CF1E5DE19500249D60 /* Entity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		003B95B41E5DB4CC00688BFF /* InspectionsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InspectionsData.h; sourceTree = "<group>"; };
 		003B95B51E5DB4CC00688BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		003C5FCB1E5DB682001B5B1F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		00B5B2CD1E5DE03000249D60 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		00B5B2CF1E5DE19500249D60 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 		003C5FCD1E5DB84B001B5B1F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				00B5B2CD1E5DE03000249D60 /* User.swift */,
+				00B5B2CF1E5DE19500249D60 /* Entity.swift */,
 			);
 			name = Domain;
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 					003B95B01E5DB4CC00688BFF = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8T6B5Y5S72;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -160,6 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B5B2D01E5DE19500249D60 /* Entity.swift in Sources */,
+				00B5B2CE1E5DE03000249D60 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +277,7 @@
 		003B95BA1E5DB4CC00688BFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8T6B5Y5S72;
@@ -280,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = daimler.com.InspectionsData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -287,6 +298,7 @@
 		003B95BB1E5DB4CC00688BFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8T6B5Y5S72;
