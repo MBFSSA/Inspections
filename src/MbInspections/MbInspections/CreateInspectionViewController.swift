@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  MbInspections
 //
 //  Created by Ryan Johansen on 2017/02/22.
@@ -8,10 +8,8 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class CreateInspectionViewController: UIViewController {
 
-    @IBOutlet weak var lblUserFullname: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

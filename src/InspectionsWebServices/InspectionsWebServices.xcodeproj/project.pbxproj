@@ -7,137 +7,127 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		003B95A11E5DB4B000688BFF /* InspectionsLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 003B959F1E5DB4B000688BFF /* InspectionsLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		003C5FD61E5DB8D7001B5B1F /* InspectionsData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C5FD51E5DB8D7001B5B1F /* InspectionsData.framework */; };
-		003C5FD81E5DB8E7001B5B1F /* InspectionSheetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C5FD71E5DB8E7001B5B1F /* InspectionSheetService.swift */; };
-		003C5FDA1E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C5FD91E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift */; };
-		00639E751E5EB4DB00B17E31 /* InspectionsWebServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00639E741E5EB4DB00B17E31 /* InspectionsWebServices.framework */; };
-		00639E7D1E5F02B700B17E31 /* ApplicationVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00639E7C1E5F02B700B17E31 /* ApplicationVariables.swift */; };
-		00B5B2CC1E5DDFCC00249D60 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5B2CB1E5DDFCC00249D60 /* AuthenticationService.swift */; };
+		00639E6B1E5EB4A600B17E31 /* InspectionsWebServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 00639E691E5EB4A600B17E31 /* InspectionsWebServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00639E731E5EB4D400B17E31 /* InspectionsData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00639E721E5EB4D400B17E31 /* InspectionsData.framework */; };
+		00639E781E5EB61500B17E31 /* AuthenticationWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00639E771E5EB61500B17E31 /* AuthenticationWebService.swift */; };
+		00639E7B1E5EB85800B17E31 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00639E7A1E5EB85800B17E31 /* AuthenticationError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		003B959C1E5DB4B000688BFF /* InspectionsLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InspectionsLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		003B959F1E5DB4B000688BFF /* InspectionsLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InspectionsLib.h; sourceTree = "<group>"; };
-		003B95A01E5DB4B000688BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		003C5FD51E5DB8D7001B5B1F /* InspectionsData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InspectionsData.framework; path = "../../../../Library/Developer/Xcode/DerivedData/InspectionsWorkspace-gvsiasmrtuyexrfvhfeyeyqpwrty/Build/Products/Debug-iphonesimulator/InspectionsData.framework"; sourceTree = "<group>"; };
-		003C5FD71E5DB8E7001B5B1F /* InspectionSheetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectionSheetService.swift; sourceTree = "<group>"; };
-		003C5FD91E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancedAssetInspectionSheetService.swift; sourceTree = "<group>"; };
-		00639E741E5EB4DB00B17E31 /* InspectionsWebServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InspectionsWebServices.framework; path = "../InspectionsWebServices/build/Debug-iphoneos/InspectionsWebServices.framework"; sourceTree = "<group>"; };
-		00639E7C1E5F02B700B17E31 /* ApplicationVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationVariables.swift; sourceTree = "<group>"; };
-		00B5B2CB1E5DDFCC00249D60 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		00639E661E5EB4A600B17E31 /* InspectionsWebServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InspectionsWebServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00639E691E5EB4A600B17E31 /* InspectionsWebServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InspectionsWebServices.h; sourceTree = "<group>"; };
+		00639E6A1E5EB4A600B17E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00639E721E5EB4D400B17E31 /* InspectionsData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InspectionsData.framework; path = "../../../../Library/Developer/Xcode/DerivedData/InspectionsWorkspace-gvsiasmrtuyexrfvhfeyeyqpwrty/Build/Products/Debug-iphonesimulator/InspectionsData.framework"; sourceTree = "<group>"; };
+		00639E771E5EB61500B17E31 /* AuthenticationWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationWebService.swift; sourceTree = "<group>"; };
+		00639E7A1E5EB85800B17E31 /* AuthenticationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		003B95981E5DB4AF00688BFF /* Frameworks */ = {
+		00639E621E5EB4A600B17E31 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00639E751E5EB4DB00B17E31 /* InspectionsWebServices.framework in Frameworks */,
-				003C5FD61E5DB8D7001B5B1F /* InspectionsData.framework in Frameworks */,
+				00639E731E5EB4D400B17E31 /* InspectionsData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		003B95921E5DB4AF00688BFF = {
+		00639E5C1E5EB4A600B17E31 = {
 			isa = PBXGroup;
 			children = (
-				003B959E1E5DB4B000688BFF /* InspectionsLib */,
-				003B959D1E5DB4B000688BFF /* Products */,
-				003C5FD41E5DB8D7001B5B1F /* Frameworks */,
+				00639E681E5EB4A600B17E31 /* InspectionsWebServices */,
+				00639E671E5EB4A600B17E31 /* Products */,
+				00639E711E5EB4D400B17E31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		003B959D1E5DB4B000688BFF /* Products */ = {
+		00639E671E5EB4A600B17E31 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				003B959C1E5DB4B000688BFF /* InspectionsLib.framework */,
+				00639E661E5EB4A600B17E31 /* InspectionsWebServices.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		003B959E1E5DB4B000688BFF /* InspectionsLib */ = {
+		00639E681E5EB4A600B17E31 /* InspectionsWebServices */ = {
 			isa = PBXGroup;
 			children = (
-				003C5FD11E5DB872001B5B1F /* Infra */,
-				003C5FD01E5DB869001B5B1F /* AppLayer */,
-				003B959F1E5DB4B000688BFF /* InspectionsLib.h */,
-				003B95A01E5DB4B000688BFF /* Info.plist */,
+				00639E791E5EB83000B17E31 /* Infra */,
+				00639E761E5EB52300B17E31 /* AppLayer */,
+				00639E691E5EB4A600B17E31 /* InspectionsWebServices.h */,
+				00639E6A1E5EB4A600B17E31 /* Info.plist */,
 			);
-			path = InspectionsLib;
+			path = InspectionsWebServices;
 			sourceTree = "<group>";
 		};
-		003C5FD01E5DB869001B5B1F /* AppLayer */ = {
+		00639E711E5EB4D400B17E31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				003C5FD71E5DB8E7001B5B1F /* InspectionSheetService.swift */,
-				003C5FD91E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift */,
-				00B5B2CB1E5DDFCC00249D60 /* AuthenticationService.swift */,
+				00639E721E5EB4D400B17E31 /* InspectionsData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00639E761E5EB52300B17E31 /* AppLayer */ = {
+			isa = PBXGroup;
+			children = (
+				00639E771E5EB61500B17E31 /* AuthenticationWebService.swift */,
 			);
 			name = AppLayer;
 			sourceTree = "<group>";
 		};
-		003C5FD11E5DB872001B5B1F /* Infra */ = {
+		00639E791E5EB83000B17E31 /* Infra */ = {
 			isa = PBXGroup;
 			children = (
-				00639E7C1E5F02B700B17E31 /* ApplicationVariables.swift */,
+				00639E7A1E5EB85800B17E31 /* AuthenticationError.swift */,
 			);
 			name = Infra;
-			sourceTree = "<group>";
-		};
-		003C5FD41E5DB8D7001B5B1F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				00639E741E5EB4DB00B17E31 /* InspectionsWebServices.framework */,
-				003C5FD51E5DB8D7001B5B1F /* InspectionsData.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		003B95991E5DB4AF00688BFF /* Headers */ = {
+		00639E631E5EB4A600B17E31 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				003B95A11E5DB4B000688BFF /* InspectionsLib.h in Headers */,
+				00639E6B1E5EB4A600B17E31 /* InspectionsWebServices.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		003B959B1E5DB4AF00688BFF /* InspectionsLib */ = {
+		00639E651E5EB4A600B17E31 /* InspectionsWebServices */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 003B95A41E5DB4B000688BFF /* Build configuration list for PBXNativeTarget "InspectionsLib" */;
+			buildConfigurationList = 00639E6E1E5EB4A600B17E31 /* Build configuration list for PBXNativeTarget "InspectionsWebServices" */;
 			buildPhases = (
-				003B95971E5DB4AF00688BFF /* Sources */,
-				003B95981E5DB4AF00688BFF /* Frameworks */,
-				003B95991E5DB4AF00688BFF /* Headers */,
-				003B959A1E5DB4AF00688BFF /* Resources */,
+				00639E611E5EB4A600B17E31 /* Sources */,
+				00639E621E5EB4A600B17E31 /* Frameworks */,
+				00639E631E5EB4A600B17E31 /* Headers */,
+				00639E641E5EB4A600B17E31 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = InspectionsLib;
-			productName = InspectionsLib;
-			productReference = 003B959C1E5DB4B000688BFF /* InspectionsLib.framework */;
+			name = InspectionsWebServices;
+			productName = InspectionsWebServices;
+			productReference = 00639E661E5EB4A600B17E31 /* InspectionsWebServices.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		003B95931E5DB4AF00688BFF /* Project object */ = {
+		00639E5D1E5EB4A600B17E31 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Ryan Johansen";
 				TargetAttributes = {
-					003B959B1E5DB4AF00688BFF = {
+					00639E651E5EB4A600B17E31 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8T6B5Y5S72;
 						LastSwiftMigration = 0820;
@@ -145,25 +135,25 @@
 					};
 				};
 			};
-			buildConfigurationList = 003B95961E5DB4AF00688BFF /* Build configuration list for PBXProject "InspectionsLib" */;
+			buildConfigurationList = 00639E601E5EB4A600B17E31 /* Build configuration list for PBXProject "InspectionsWebServices" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 003B95921E5DB4AF00688BFF;
-			productRefGroup = 003B959D1E5DB4B000688BFF /* Products */;
+			mainGroup = 00639E5C1E5EB4A600B17E31;
+			productRefGroup = 00639E671E5EB4A600B17E31 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				003B959B1E5DB4AF00688BFF /* InspectionsLib */,
+				00639E651E5EB4A600B17E31 /* InspectionsWebServices */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		003B959A1E5DB4AF00688BFF /* Resources */ = {
+		00639E641E5EB4A600B17E31 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -173,21 +163,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		003B95971E5DB4AF00688BFF /* Sources */ = {
+		00639E611E5EB4A600B17E31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00B5B2CC1E5DDFCC00249D60 /* AuthenticationService.swift in Sources */,
-				003C5FDA1E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift in Sources */,
-				00639E7D1E5F02B700B17E31 /* ApplicationVariables.swift in Sources */,
-				003C5FD81E5DB8E7001B5B1F /* InspectionSheetService.swift in Sources */,
+				00639E7B1E5EB85800B17E31 /* AuthenticationError.swift in Sources */,
+				00639E781E5EB61500B17E31 /* AuthenticationWebService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		003B95A21E5DB4B000688BFF /* Debug */ = {
+		00639E6C1E5EB4A600B17E31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -240,7 +228,7 @@
 			};
 			name = Debug;
 		};
-		003B95A31E5DB4B000688BFF /* Release */ = {
+		00639E6D1E5EB4A600B17E31 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -286,7 +274,7 @@
 			};
 			name = Release;
 		};
-		003B95A51E5DB4B000688BFF /* Debug */ = {
+		00639E6F1E5EB4A600B17E31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -296,10 +284,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = InspectionsLib/Info.plist;
+				INFOPLIST_FILE = InspectionsWebServices/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = daimler.com.InspectionsLib;
+				PRODUCT_BUNDLE_IDENTIFIER = daimler.com.InspectionsWebServices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -307,7 +295,7 @@
 			};
 			name = Debug;
 		};
-		003B95A61E5DB4B000688BFF /* Release */ = {
+		00639E701E5EB4A600B17E31 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -317,10 +305,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = InspectionsLib/Info.plist;
+				INFOPLIST_FILE = InspectionsWebServices/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = daimler.com.InspectionsLib;
+				PRODUCT_BUNDLE_IDENTIFIER = daimler.com.InspectionsWebServices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -330,25 +318,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		003B95961E5DB4AF00688BFF /* Build configuration list for PBXProject "InspectionsLib" */ = {
+		00639E601E5EB4A600B17E31 /* Build configuration list for PBXProject "InspectionsWebServices" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				003B95A21E5DB4B000688BFF /* Debug */,
-				003B95A31E5DB4B000688BFF /* Release */,
+				00639E6C1E5EB4A600B17E31 /* Debug */,
+				00639E6D1E5EB4A600B17E31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		003B95A41E5DB4B000688BFF /* Build configuration list for PBXNativeTarget "InspectionsLib" */ = {
+		00639E6E1E5EB4A600B17E31 /* Build configuration list for PBXNativeTarget "InspectionsWebServices" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				003B95A51E5DB4B000688BFF /* Debug */,
-				003B95A61E5DB4B000688BFF /* Release */,
+				00639E6F1E5EB4A600B17E31 /* Debug */,
+				00639E701E5EB4A600B17E31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 003B95931E5DB4AF00688BFF /* Project object */;
+	rootObject = 00639E5D1E5EB4A600B17E31 /* Project object */;
 }

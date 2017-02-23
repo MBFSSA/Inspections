@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:InspectionsWebServices/InspectionsWebServices.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:InspectionsData/InspectionsData.xcodeproj">
    </FileRef>
    <FileRef

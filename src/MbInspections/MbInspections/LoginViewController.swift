@@ -30,7 +30,9 @@ class LoginViewController: UIViewController {
         
         do
         {
-            var user: User = try AuthenticationService().AuthenticateUser(email: txtEmail.text!, password: txtPassword.text!)
+            var user: User = try AuthenticationService().authenticateUser(email: txtEmail.text!, password: txtPassword.text!)
+            
+            ApplicationVariables.CurrentUser = user
             
             let vc : AnyObject! = self.storyboard?.instantiateViewController(withIdentifier: "HomeTabBarController")
             self.showDetailViewController(vc as! UITabBarController, sender: self)
