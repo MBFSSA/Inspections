@@ -8,6 +8,7 @@
 
 import Foundation
 import InspectionsData
+import SwiftyJSON
 
 public class AuthenticationWebService
 {

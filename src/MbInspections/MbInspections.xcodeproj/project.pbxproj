@@ -20,6 +20,10 @@
 		003C5FE31E5DC150001B5B1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003C5FE11E5DC150001B5B1F /* Main.storyboard */; };
 		00639E7F1E5F05DE00B17E31 /* InspectionBookingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00639E7E1E5F05DE00B17E31 /* InspectionBookingsViewController.swift */; };
 		007F03F11E5E178500B831E2 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007F03F01E5E178500B831E2 /* ForgotPasswordViewController.swift */; };
+		00A98EBB1E5FE88B00363762 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A98EB11E5FE7B100363762 /* SwiftyJSON.framework */; };
+		00A98EBC1E5FE88B00363762 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00A98EB11E5FE7B100363762 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00A98EBD1E5FE88B00363762 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A98EAF1E5FE7A000363762 /* Alamofire.framework */; };
+		00A98EBE1E5FE88B00363762 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00A98EAF1E5FE7A000363762 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00B5B2CA1E5DDC4F00249D60 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5B2C91E5DDC4F00249D60 /* HomeTabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +36,8 @@
 			files = (
 				003B95C21E5DB53800688BFF /* InspectionsData.framework in Embed Frameworks */,
 				003B95BE1E5DB4ED00688BFF /* InspectionsLib.framework in Embed Frameworks */,
+				00A98EBC1E5FE88B00363762 /* SwiftyJSON.framework in Embed Frameworks */,
+				00A98EBE1E5FE88B00363762 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +58,8 @@
 		003C5FE21E5DC150001B5B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MbInspections/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00639E7E1E5F05DE00B17E31 /* InspectionBookingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectionBookingsViewController.swift; sourceTree = "<group>"; };
 		007F03F01E5E178500B831E2 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		00A98EAF1E5FE7A000363762 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		00A98EB11E5FE7B100363762 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		00B5B2C91E5DDC4F00249D60 /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +70,8 @@
 			files = (
 				003B95C11E5DB53800688BFF /* InspectionsData.framework in Frameworks */,
 				003B95BD1E5DB4ED00688BFF /* InspectionsLib.framework in Frameworks */,
+				00A98EBB1E5FE88B00363762 /* SwiftyJSON.framework in Frameworks */,
+				00A98EBD1E5FE88B00363762 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +85,7 @@
 				003B95BC1E5DB4ED00688BFF /* InspectionsLib.framework */,
 				003B957D1E5DB48800688BFF /* MbInspections */,
 				003B957C1E5DB48800688BFF /* Products */,
+				00A98EAE1E5FE7A000363762 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +137,15 @@
 				00639E7E1E5F05DE00B17E31 /* InspectionBookingsViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		00A98EAE1E5FE7A000363762 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00A98EB11E5FE7B100363762 /* SwiftyJSON.framework */,
+				00A98EAF1E5FE7A000363762 /* Alamofire.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +353,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8T6B5Y5S72;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MbInspections/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = daimler.com.MbInspections;
@@ -346,6 +370,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8T6B5Y5S72;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MbInspections/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = daimler.com.MbInspections;
