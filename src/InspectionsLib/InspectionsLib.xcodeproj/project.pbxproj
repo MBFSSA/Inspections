@@ -11,8 +11,8 @@
 		003C5FD61E5DB8D7001B5B1F /* InspectionsData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C5FD51E5DB8D7001B5B1F /* InspectionsData.framework */; };
 		003C5FD81E5DB8E7001B5B1F /* InspectionSheetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C5FD71E5DB8E7001B5B1F /* InspectionSheetService.swift */; };
 		003C5FDA1E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C5FD91E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift */; };
-		00639E751E5EB4DB00B17E31 /* InspectionsWebServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00639E741E5EB4DB00B17E31 /* InspectionsWebServices.framework */; };
 		00639E7D1E5F02B700B17E31 /* ApplicationVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00639E7C1E5F02B700B17E31 /* ApplicationVariables.swift */; };
+		008B49781E60604C00341DC9 /* InspectionsWebServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008B49771E60604C00341DC9 /* InspectionsWebServices.framework */; };
 		00B5B2CC1E5DDFCC00249D60 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5B2CB1E5DDFCC00249D60 /* AuthenticationService.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +23,8 @@
 		003C5FD51E5DB8D7001B5B1F /* InspectionsData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InspectionsData.framework; path = "../../../../Library/Developer/Xcode/DerivedData/InspectionsWorkspace-gvsiasmrtuyexrfvhfeyeyqpwrty/Build/Products/Debug-iphonesimulator/InspectionsData.framework"; sourceTree = "<group>"; };
 		003C5FD71E5DB8E7001B5B1F /* InspectionSheetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectionSheetService.swift; sourceTree = "<group>"; };
 		003C5FD91E5DB918001B5B1F /* FinancedAssetInspectionSheetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancedAssetInspectionSheetService.swift; sourceTree = "<group>"; };
-		00639E741E5EB4DB00B17E31 /* InspectionsWebServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InspectionsWebServices.framework; path = "../InspectionsWebServices/build/Debug-iphoneos/InspectionsWebServices.framework"; sourceTree = "<group>"; };
 		00639E7C1E5F02B700B17E31 /* ApplicationVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationVariables.swift; sourceTree = "<group>"; };
+		008B49771E60604C00341DC9 /* InspectionsWebServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InspectionsWebServices.framework; path = "../../../../Library/Developer/Xcode/DerivedData/InspectionsWorkspace-gvsiasmrtuyexrfvhfeyeyqpwrty/Build/Products/Debug-iphoneos/InspectionsWebServices.framework"; sourceTree = "<group>"; };
 		00B5B2CB1E5DDFCC00249D60 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00639E751E5EB4DB00B17E31 /* InspectionsWebServices.framework in Frameworks */,
+				008B49781E60604C00341DC9 /* InspectionsWebServices.framework in Frameworks */,
 				003C5FD61E5DB8D7001B5B1F /* InspectionsData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,7 +90,7 @@
 		003C5FD41E5DB8D7001B5B1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				00639E741E5EB4DB00B17E31 /* InspectionsWebServices.framework */,
+				008B49771E60604C00341DC9 /* InspectionsWebServices.framework */,
 				003C5FD51E5DB8D7001B5B1F /* InspectionsData.framework */,
 			);
 			name = Frameworks;

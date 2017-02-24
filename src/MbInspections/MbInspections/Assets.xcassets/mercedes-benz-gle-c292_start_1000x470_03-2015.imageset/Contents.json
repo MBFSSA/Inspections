@@ -4,6 +4,14 @@
       "idiom" : "universal",
       "filename" : "mercedes-benz-gle-c292_start_1000x470_03-2015.jpg",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
