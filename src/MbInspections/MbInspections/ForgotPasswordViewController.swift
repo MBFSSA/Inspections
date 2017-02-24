@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import Foundation
 
 class ForgotPasswordViewController: UIViewController {
+    
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +22,18 @@ class ForgotPasswordViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction func btnResetPassword(_ sender: Any) {
+        let vc : AnyObject! = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController")
+        self.showDetailViewController(vc as! UIViewController, sender: self)
+    }
+    
+    
+    @IBAction func btnBack(_ sender: Any) {
+        let vc : AnyObject! = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController")
+        self.showDetailViewController(vc as! UIViewController, sender: self)
+        
     }
 
 }

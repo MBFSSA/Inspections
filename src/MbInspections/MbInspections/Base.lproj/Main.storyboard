@@ -140,7 +140,7 @@
         <!--Item-->
         <scene sceneID="DBg-7n-S1w">
             <objects>
-                <viewController id="Wtr-PO-Wbd" customClass="LoginViewController" customModule="MbInspections" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="Wtr-PO-Wbd" customClass="LoginViewController" customModule="MbInspections" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="svm-Uj-jRe"/>
                         <viewControllerLayoutGuide type="bottom" id="MCT-9S-8GC"/>
@@ -209,7 +209,7 @@
         <!--Forgot Password-->
         <scene sceneID="q0o-9i-NLJ">
             <objects>
-                <viewController title="Forgot Password" id="nRC-zn-QTg" customClass="ForgotPasswordViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForgotPasswordViewController" title="Forgot Password" id="nRC-zn-QTg" customClass="ForgotPasswordViewController" customModule="MbInspections" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3c7-Fk-nDN"/>
                         <viewControllerLayoutGuide type="bottom" id="P9Q-Gb-w0P"/>
@@ -223,19 +223,35 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Forgot Password" id="V1T-mW-CCz">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="hhB-8X-NOe">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9s0-HR-jQd">
-                                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="M8s-rR-CVQ">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wX5-eo-PFh">
+                                                <rect key="frame" x="16" y="7" width="46" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="&lt; Back"/>
+                                                <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <action selector="btnBack:" destination="nRC-zn-QTg" eventType="touchUpInside" id="8R3-V8-rmi"/>
+                                                </connections>
                                             </button>
-                                            <connections>
-                                                <segue destination="Wtr-PO-Wbd" kind="show" id="0Z4-Eq-Qg7"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bx2-mO-Kls">
+                                <rect key="frame" x="152" y="119" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="btnResetPassword:" destination="nRC-zn-QTg" eventType="touchUpInside" id="nDx-Co-kWw"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehV-rP-hbZ">
+                                <rect key="frame" x="64" y="73" width="247" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
