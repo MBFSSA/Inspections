@@ -13,6 +13,7 @@
 		00639E7B1E5EB85800B17E31 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00639E7A1E5EB85800B17E31 /* AuthenticationError.swift */; };
 		00A98EB41E5FE7E200363762 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A98EB31E5FE7E200363762 /* Alamofire.framework */; };
 		00A98EB61E5FE7EF00363762 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A98EB51E5FE7EF00363762 /* SwiftyJSON.framework */; };
+		00D44EC31E60ADB700A8E4CF /* AuthenticationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D44EC21E60ADB700A8E4CF /* AuthenticationServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		00639E7A1E5EB85800B17E31 /* AuthenticationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
 		00A98EB31E5FE7E200363762 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		00A98EB51E5FE7EF00363762 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		00D44EC21E60ADB700A8E4CF /* AuthenticationServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		00639E681E5EB4A600B17E31 /* InspectionsWebServices */ = {
 			isa = PBXGroup;
 			children = (
+				00D44EC11E60AD8B00A8E4CF /* Protocols */,
 				00639E791E5EB83000B17E31 /* Infra */,
 				00639E761E5EB52300B17E31 /* AppLayer */,
 				00639E691E5EB4A600B17E31 /* InspectionsWebServices.h */,
@@ -92,6 +95,14 @@
 				00639E7A1E5EB85800B17E31 /* AuthenticationError.swift */,
 			);
 			name = Infra;
+			sourceTree = "<group>";
+		};
+		00D44EC11E60AD8B00A8E4CF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				00D44EC21E60ADB700A8E4CF /* AuthenticationServiceProtocol.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D44EC31E60ADB700A8E4CF /* AuthenticationServiceProtocol.swift in Sources */,
 				00639E7B1E5EB85800B17E31 /* AuthenticationError.swift in Sources */,
 				00639E781E5EB61500B17E31 /* AuthenticationWebService.swift in Sources */,
 			);

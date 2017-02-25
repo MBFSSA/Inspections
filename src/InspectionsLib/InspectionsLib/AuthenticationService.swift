@@ -10,7 +10,16 @@ import Foundation
 import InspectionsData
 import InspectionsWebServices
 
-public class AuthenticationService {
+public class AuthenticationService: AuthenticationServiceProtocol
+{
+    public func forgotPassword(email: String, completionHandler: @escaping  (String) -> Void)  {
+        return AuthenticationWebService().forgotPassword(email: email, completionHandler:  forgotPasswordComplete)
+    }
+    
+    func forgotPasswordComplete(res : String) -> Void{
+        print(res)
+    }
+
     
     
     public init() {}
