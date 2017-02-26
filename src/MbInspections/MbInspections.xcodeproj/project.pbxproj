@@ -27,6 +27,7 @@
 		00A98EBD1E5FE88B00363762 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A98EAF1E5FE7A000363762 /* Alamofire.framework */; };
 		00A98EBE1E5FE88B00363762 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00A98EAF1E5FE7A000363762 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00B5B2CA1E5DDC4F00249D60 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B5B2C91E5DDC4F00249D60 /* HomeTabBarController.swift */; };
+		00BB3A001E62F7960055125B /* UserDefaultsPersistenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BB39FF1E62F7960055125B /* UserDefaultsPersistenceTest.swift */; };
 		00CC4EF31E6171390021B99A /* MbInspectionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CC4EF21E6171390021B99A /* MbInspectionsTests.swift */; };
 		00CC4EFB1E61721C0021B99A /* AuthenticationServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CC4EFA1E61721C0021B99A /* AuthenticationServiceTest.swift */; };
 		00CC4EFD1E61816A0021B99A /* InspectionsWebServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CC4EFC1E61816A0021B99A /* InspectionsWebServices.framework */; };
@@ -82,6 +83,7 @@
 		00A98EAF1E5FE7A000363762 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		00A98EB11E5FE7B100363762 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		00B5B2C91E5DDC4F00249D60 /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		00BB39FF1E62F7960055125B /* UserDefaultsPersistenceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsPersistenceTest.swift; sourceTree = "<group>"; };
 		00CC4EF01E6171390021B99A /* MbInspectionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MbInspectionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CC4EF21E6171390021B99A /* MbInspectionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbInspectionsTests.swift; sourceTree = "<group>"; };
 		00CC4EF41E6171390021B99A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				00CC4EF21E6171390021B99A /* MbInspectionsTests.swift */,
 				00CC4EF41E6171390021B99A /* Info.plist */,
 				00CC4EFA1E61721C0021B99A /* AuthenticationServiceTest.swift */,
+				00BB39FF1E62F7960055125B /* UserDefaultsPersistenceTest.swift */,
 			);
 			path = MbInspectionsTests;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00CC4EF31E6171390021B99A /* MbInspectionsTests.swift in Sources */,
+				00BB3A001E62F7960055125B /* UserDefaultsPersistenceTest.swift in Sources */,
 				00CC4EFB1E61721C0021B99A /* AuthenticationServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,6 +591,7 @@
 				00CC4EF81E6171390021B99A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

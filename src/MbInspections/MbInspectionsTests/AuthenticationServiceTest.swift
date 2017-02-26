@@ -38,16 +38,19 @@ class AuthenticationServiceTest: XCTestCase {
 
     func testDirectService() {
         
+        _ = expectation(description: "Alamofire")
         
         let url: String = "https://jsonplaceholder.typicode.com/todos/1"
         Alamofire.request(url)
             .responseJSON { response in
                 
-                
-                print(response.result.value as! String)
+                let json = JSON(data: response.data!)
+                print(json)
+                //print(response.result.value as! [String: String])
              //   completionHandler(response.result.value as! String)
         }
 
+        waitForExpectations(timeout: 5.0, handler: nil)
     }
     
     
